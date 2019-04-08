@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<h3 Student dyrectory />
+<hr>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="tempStudent : ${students}">
+            <td th:text="${tempStudent.id}" />
+            <td th:text="${tempStudent.firstName}" />
+            <td th:text="${tempStudent.lastName}" />
+            <td th:text="${tempStudent.email}" />
+        </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>
