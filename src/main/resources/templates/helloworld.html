@@ -5,25 +5,15 @@
 
     <title>Hello from Thymeleaf</title>
 
+    <!-- Reference CSS file -->
+    <link rel="stylesheet" th:href="@{/css/demo.css}"/>
+
 </head>
 
 <body>
 
-<p th:text="'Time on the server is ' + ${theDate}"></p>
+<p th:text="'Time on the server is ' + ${theDate} " class="funny"></p>
 
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
